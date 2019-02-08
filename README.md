@@ -30,20 +30,20 @@ Make sure to do this **the second you boot the system** (otherwise the UI will f
 1. Open */etc/modprobe.d/blacklist.conf* (it is possible that the file doesn't exist)
 2. Add these lines to the file: (this will blacklist the drivers to boot the NVIDIA GPU)
 
->blacklist nouveau
->
->blacklist rivafb
->
->blacklist nvidiafb
->
->blacklist rivatv
->
->blacklist nv
+~~~~
+blacklist nouveau
+blacklist rivafb
+blacklist nvidiafb
+blacklist rivatv
+blacklist nv
+~~~~
 
 3. Open */etc/tmpfiles.d/nvidia_pm.conf* (it is possible that the file doesn't exist)
 
 4. Add these lines to the file: (this will disable the NVIDIA GPU completely to save power)
-> w /sys/bus/pci/devices/0000:01:00.0/power/control - - - - auto
+~~~~
+w /sys/bus/pci/devices/0000:01:00.0/power/control - - - - auto
+~~~~
 
 **WARNING: reboot the system before continueing**
 
@@ -56,9 +56,13 @@ Make sure to do this **the second you boot the system** (otherwise the UI will f
 - Install *kvantum-manjaro* using Octopi.
   - When extra dependencies are prompted, don't select any of them.
 - Run the following command to install the *theme*
-> wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/adapta-kde/master/install.sh | sh
+~~~~
+wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/adapta-kde/master/install.sh | sh
+~~~~
 - Run the following command to install the *icons*
-> wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | sh
+~~~~
+wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | sh
+~~~~
 
 ### Installation:
 Kvantum Setup:
