@@ -81,5 +81,12 @@ Firefox setup:
 
 1. Install the extension.
 
+# Installing Visual Studio Code
+> Reference: https://wiki.archlinux.org/index.php/Visual_Studio_Code
 
+### Installation:
+1. Git clone: https://aur.archlinux.org/visual-studio-code-bin.git into *Downloads/temp*
+2. CD into the new directory
+3. Run the command *makepkg -sirc*
+4. Finish the installation steps.
 
