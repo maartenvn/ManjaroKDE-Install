@@ -1,4 +1,4 @@
-# manjaro-kde-install
+# Manjaro KDE Install (for XPS 15 9570)
 All things done while installing Manjaro KDE to have a consistant installation next time.
 
 # Creating a bootable USB.
@@ -31,9 +31,13 @@ Make sure to do this **the second you boot the system** (otherwise the UI will f
 2. Add these lines to the file: (this will blacklist the drivers to boot the NVIDIA GPU)
 
 >blacklist nouveau
+>
 >blacklist rivafb
+>
 >blacklist nvidiafb
+>
 >blacklist rivatv
+>
 >blacklist nv
 
 3. Open */etc/tmpfiles.d/nvidia_pm.conf* (it is possible that the file doesn't exist)
