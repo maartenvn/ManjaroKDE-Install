@@ -45,6 +45,8 @@ Make sure to do this **the second you boot the system** (otherwise the UI will f
 4. Add these lines to the file: (this will disable the NVIDIA GPU completely to save power)
 > w /sys/bus/pci/devices/0000:01:00.0/power/control - - - - auto
 
+**WARNING: reboot the system before continueing**
+
 # Installing Adapta KDE theme and icons.
 > Theme: https://github.com/PapirusDevelopmentTeam/adapta-kde
 >
