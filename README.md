@@ -44,3 +44,40 @@ Make sure to do this **the second you boot the system** (otherwise the UI will f
 
 4. Add these lines to the file: (this will disable the NVIDIA GPU completely to save power)
 > w /sys/bus/pci/devices/0000:01:00.0/power/control - - - - auto
+
+# Installing Adapta KDE theme and icons.
+> Theme: https://github.com/PapirusDevelopmentTeam/adapta-kde
+>
+> Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+
+### Prerequires:
+- Install *kvantum-manjaro* using Octopi.
+  - When extra dependencies are prompted, don't select any of them.
+- Run the following command to install the *theme*
+> wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/adapta-kde/master/install.sh | sh
+- Run the following command to install the *icons*
+> wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install.sh | sh
+
+### Installation:
+Kvantum Setup:
+1. Open *Kvantum* using the start menu.
+2. Go to *Change/Delete theme* and select *AdaptaNokto* in the dropdown.
+3. Click *Use this theme*
+
+KDE setup:
+1. Open *System Settings* using the start menu.
+2. 
+- Go to *Workspace Theme* and select *Adapta* & *Apply*
+- Go to *Workspace Theme* > *Desktop Theme* and select *Adapta* & *Apply*
+- Go to *Colors* and select *Adapta Nokto* & *Apply*
+- Go to *Application Style* > *Widget Style* > Make sure *kvantum* is selected.
+- Go to *Application Style* > *Window Decorations* > *Configure Adapta* & *Apply*
+- Go to *Icons* and select *Papirus-Dark* & *Apply*
+
+Firefox setup:
+> Extension: https://addons.mozilla.org/nl/firefox/addon/adapta-theme-webextension/
+
+1. Install the extension.
+
+
+
