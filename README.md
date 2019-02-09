@@ -103,13 +103,17 @@ Firefox setup:
 sudo pacman -Syyu
 ~~~~
 This will take a while and will update all other packages.
+
 2. Type *uname -r*. This displays what Linux version you are using. The first 3 digits mather.
+
 3. Reboot the system (not shutdown!)
+
 4. Install the Linux headers for the corresponding kernel version using:
 ~~~~
 pacman -S linux419-headers
 ~~~~
 **Replace 419 by the first 3 digits of the output of uname -r**
+
 5. Reboot the system (not shutdown!)
 6. Install *evdi* from https://aur.archlinux.org/packages/evdi-git/
 7. Install *DisplayLink* from https://aur.archlinux.org/packages/displaylink/
@@ -122,3 +126,4 @@ Section "OutputClass"
 	Option  "AccelMethod" "none"
 EndSection
 ~~~~
+
