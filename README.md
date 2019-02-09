@@ -94,3 +94,31 @@ Firefox setup:
 3. Run the command *makepkg -sirc*
 4. Finish the installation steps.
 
+# Installing DisplayLink (WARNING: this is not yet working)
+> Reference: https://wiki.archlinux.org/index.php/DisplayLink#USB_3.0_DL-6xxx,_DL-5xxx,_DL-41xx,_DL-3xxx_Devices
+
+### Installation:
+1. Update the current Linux kernel version to the latest build of that version using:
+~~~~
+sudo pacman -Syyu
+~~~~
+This will take a while and will update all other packages.
+2. Type *uname -r*. This displays what Linux version you are using. The first 3 digits mather.
+3. Reboot the system (not shutdown!)
+4. Install the Linux headers for the corresponding kernel version using:
+~~~~
+pacman -S linux419-headers
+~~~~
+**Replace 419 by the first 3 digits of the output of uname -r**
+5. Reboot the system (not shutdown!)
+6. Install *evdi* from https://aur.archlinux.org/packages/evdi-git/
+7. Install *DisplayLink* from https://aur.archlinux.org/packages/displaylink/
+8. Open */usr/share/X11/xorg.conf.d/20-evdidevice.conf* and add:
+~~~~
+Section "OutputClass"
+	Identifier "DisplayLink"
+	MatchDriver "evdi"
+	Driver "modesetting"
+	Option  "AccelMethod" "none"
+EndSection
+~~~~
