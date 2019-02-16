@@ -3,8 +3,8 @@ All things done while installing Manjaro KDE to have a consistant installation n
 
 # Creating a bootable USB.
 ### Prerequiries:
-- Download the Manjaro KDE ISO.
-- Download RUFUS.
+- [Download](https://manjaro.org/download/) the Manjaro KDE ISO.
+- [Download](https://rufus.ie/) RUFUS.
 
 ### Instructions:
 1. Open RUFUS and select the USB to install the ISO on.
