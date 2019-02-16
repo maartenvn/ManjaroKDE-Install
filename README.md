@@ -94,7 +94,7 @@ Firefox setup:
 3. Run the command *makepkg -sirc*
 4. Finish the installation steps.
 
-# Installing DisplayLink (WARNING: this is not yet working)
+# Installing DisplayLink
 > Reference: https://wiki.archlinux.org/index.php/DisplayLink#USB_3.0_DL-6xxx,_DL-5xxx,_DL-41xx,_DL-3xxx_Devices
 
 ### Installation:
@@ -126,4 +126,13 @@ Section "OutputClass"
 	Option  "AccelMethod" "none"
 EndSection
 ~~~~
-
+9. Reboot the system
+10. Enable the *DisplayLink* service using:
+~~~~
+systemctl enable displaylink.service
+~~~~
+11. Start the *DisplayLink* service using=
+~~~~
+systemctl start displaylink.service
+~~~~
+12. Go to System Settings > Search *compositor* > Change *Rendering Backend* to **XRender**
