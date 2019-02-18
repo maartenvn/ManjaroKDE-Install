@@ -136,3 +136,20 @@ systemctl enable displaylink.service
 systemctl start displaylink.service
 ~~~~
 12. Go to System Settings > Search *compositor* > Change *Rendering Backend* to **XRender**
+
+# Fixing suspend bug.
+Manjaro has *s2idle* as default sleep operation. You can compare this to *Connected Standby* in Windows. 
+This causes the system to wake up from sleep when closing the laptop lid.
+
+### Check sleep type
+You can check what type of sleep mode is enabled using:
+~~~~
+cat /sys/power/mem_sleep 
+~~~~
+
+### Fix the issue
+Use the following command to fix the issue:
+
+~~~~
+echo deep|sudo tee /sys/power/mem_sleep
+~~~~
