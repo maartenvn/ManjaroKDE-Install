@@ -23,28 +23,6 @@ All things done while installing Manjaro KDE to have a consistant installation n
 1. Boot into device selection (F12 while booting the system)
 2. Select the USB.
 
-# IMPORTANT: Disabling NVIDIA GPU.
-Make sure to do this **the second you boot the system** (otherwise the UI will freeze)
-> Reference: https://wiki.archlinux.org/index.php/Dell_XPS_15_9570
-
-1. Open */etc/modprobe.d/blacklist.conf* (it is possible that the file doesn't exist)
-2. Add these lines to the file: (this will blacklist the drivers to boot the NVIDIA GPU)
-
-~~~~
-blacklist nouveau
-blacklist rivafb
-blacklist nvidiafb
-blacklist rivatv
-blacklist nv
-~~~~
-
-3. Open */etc/tmpfiles.d/nvidia_pm.conf* (it is possible that the file doesn't exist)
-
-4. Add these lines to the file: (this will disable the NVIDIA GPU completely to save power)
-~~~~
-w /sys/bus/pci/devices/0000:01:00.0/power/control - - - - auto
-~~~~
-
 **WARNING: reboot the system before continueing**
 
 # Installing Adapta KDE theme and icons.
