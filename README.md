@@ -126,8 +126,14 @@ cat /sys/power/mem_sleep
 ~~~~
 
 ### Fix the issue
-Use the following command to fix the issue:
+To fix the issue you need to add *mem_sleep_default=deep* to your kernel parameters:
 
+1. Open */etc/default/grub*
+2. Find the following line:
 ~~~~
-echo deep|sudo tee /sys/power/mem_sleep
+GRUB_CMDLINE_LINUX_DEFAULT=
+~~~~
+3. Add the following content:
+~~~~
+mem_sleep_default=deep
 ~~~~
