@@ -133,7 +133,11 @@ To fix the issue you need to add *mem_sleep_default=deep* to your kernel paramet
 ~~~~
 GRUB_CMDLINE_LINUX_DEFAULT=
 ~~~~
-3. Add the following content:
+3. Add the following content: (add a space after the existing code)
 ~~~~
 mem_sleep_default=deep
+~~~~
+4. Regenerate GRUB using:
+~~~~
+grub-mkconfig -o /boot/grub/grub.cfg
 ~~~~
