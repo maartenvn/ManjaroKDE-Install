@@ -25,6 +25,15 @@ All things done while installing Manjaro KDE to have a consistant installation n
 
 **WARNING: reboot the system before continueing**
 
+# Installing Yaourt.
+To install AUR packages it is recommended to install *Yaourt* as this makes live a lot easier for installing.
+
+### Installation:
+Execute the following command:
+~~~~
+sudo pacman -Sy yaourt
+~~~~
+
 # Installing Adapta KDE theme and icons.
 > Theme: https://github.com/PapirusDevelopmentTeam/adapta-kde
 >
@@ -67,10 +76,12 @@ Firefox setup:
 > Reference: https://wiki.archlinux.org/index.php/Visual_Studio_Code
 
 ### Installation:
-1. Git clone: https://aur.archlinux.org/visual-studio-code-bin.git into *Downloads/temp*
-2. CD into the new directory
-3. Run the command *makepkg -sirc*
-4. Finish the installation steps.
+1. Use the command:
+~~~~
+yaourt visual-studio-code-bin
+~~~~
+2. Type the number of the package with name *visual-studio-code-bin*
+3. Finish the installation steps.
 
 # Installing DisplayLink
 > Reference: https://wiki.archlinux.org/index.php/DisplayLink#USB_3.0_DL-6xxx,_DL-5xxx,_DL-41xx,_DL-3xxx_Devices
@@ -93,8 +104,8 @@ pacman -S linux419-headers
 **Replace 419 by the first 3 digits of the output of uname -r**
 
 5. Reboot the system (not shutdown!)
-6. Install *evdi* from https://aur.archlinux.org/packages/evdi-git/
-7. Install *DisplayLink* from https://aur.archlinux.org/packages/displaylink/
+6. Install *evdi* from https://aur.archlinux.org/packages/evdi-git/ (use *yaourt evdi-git*)
+7. Install *DisplayLink* from https://aur.archlinux.org/packages/displaylink/ (use *yaourt displaylink*)
 8. Open */usr/share/X11/xorg.conf.d/20-evdidevice.conf* and add:
 ~~~~
 Section "OutputClass"
