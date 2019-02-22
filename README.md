@@ -1,6 +1,27 @@
 # Manjaro KDE Install (for XPS 15 9570)
 All things done while installing Manjaro KDE to have a consistant installation next time.
 
+# Table of contents.
+- [Creating a bootable USB.](#creating-a-bootable-usb)
+    + [Prerequiries:](#prerequiries-)
+    + [Instructions:](#instructions-)
+- [Making the system read the USB.](#making-the-system-read-the-usb)
+    + [Instructions.](#instructions)
+- [Select the USB on boot.](#select-the-usb-on-boot)
+    + [Instructions](#instructions)
+- [Installing Yaourt.](#installing-yaourt)
+    + [Installation:](#installation-)
+- [Installing Adapta KDE theme and icons.](#installing-adapta-kde-theme-and-icons)
+    + [Prerequires:](#prerequires-)
+    + [Installation:](#installation--1)
+- [Installing Visual Studio Code](#installing-visual-studio-code)
+    + [Installation:](#installation--2)
+- [Installing DisplayLink](#installing-displaylink)
+    + [Installation:](#installation--3)
+- [Fixing suspend bug.](#fixing-suspend-bug)
+    + [Check sleep type](#check-sleep-type)
+    + [Fix the issue](#fix-the-issue)
+
 # Creating a bootable USB.
 ### Prerequiries:
 - [Download](https://manjaro.org/download/) the Manjaro KDE ISO.
