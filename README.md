@@ -6,9 +6,9 @@ All things done while installing Manjaro KDE to have a consistant installation n
     + [Prerequiries:](#prerequiries-)
     + [Instructions:](#instructions-)
 - [Making the system read the USB.](#making-the-system-read-the-usb)
-    + [Instructions.](#instructions)
+    + [Instructions:](#instructions--1)
 - [Select the USB on boot.](#select-the-usb-on-boot)
-    + [Instructions](#instructions)
+    + [Instructions:](#instructions--2)
 - [Installing Yaourt.](#installing-yaourt)
     + [Installation:](#installation-)
 - [Installing Adapta KDE theme and icons.](#installing-adapta-kde-theme-and-icons)
@@ -19,8 +19,8 @@ All things done while installing Manjaro KDE to have a consistant installation n
 - [Installing DisplayLink](#installing-displaylink)
     + [Installation:](#installation--3)
 - [Fixing suspend bug.](#fixing-suspend-bug)
-    + [Check sleep type](#check-sleep-type)
-    + [Fix the issue](#fix-the-issue)
+    + [Check sleep type:](#check-sleep-type-)
+    + [Fix the issue:](#fix-the-issue-)
 
 # Creating a bootable USB.
 ### Prerequiries:
@@ -33,14 +33,14 @@ All things done while installing Manjaro KDE to have a consistant installation n
 3. RUFUS will prompt to choose a image version. Select **DD-Image**
 
 # Making the system read the USB.
-### Instructions.
+### Instructions:
 1. Boot into BIOS (F2 while booting the system)
 2. Disable Secure Boot
 3. Set drive on AHCI instead of RAID.
 4. Save and Exit.
 
 # Select the USB on boot.
-### Instructions
+### Instructions:
 1. Boot into device selection (F12 while booting the system)
 2. Select the USB.
 
@@ -151,13 +151,13 @@ systemctl start displaylink.service
 Manjaro has *s2idle* as default sleep operation. You can compare this to *Connected Standby* in Windows. 
 This causes the system to wake up from sleep when closing the laptop lid.
 
-### Check sleep type
+### Check sleep type:
 You can check what type of sleep mode is enabled using:
 ~~~~
 cat /sys/power/mem_sleep 
 ~~~~
 
-### Fix the issue
+### Fix the issue:
 To fix the issue you need to add *mem_sleep_default=deep* to your kernel parameters:
 
 1. Open */etc/default/grub*
