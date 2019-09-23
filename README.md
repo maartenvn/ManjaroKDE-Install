@@ -25,7 +25,7 @@ All things done while installing Manjaro KDE to have a consistant installation n
 ### Instructions:
 1. Boot into BIOS (F2 while booting the system)
 2. Disable Secure Boot
-3. Set drive on AHCI instead of RAID.
+3. Set drive on AHCI instead of RAID (WARNING: this will break any existing OS).
 4. Save and Exit.
 
 # Select the USB on boot.
