@@ -94,6 +94,7 @@ yay visual-studio-code-bin
 3. Finish the installation steps.
 
 # Installing DisplayLink
+> Only install when using a Displaylink Dock
 > Reference: https://wiki.archlinux.org/index.php/DisplayLink#USB_3.0_DL-6xxx,_DL-5xxx,_DL-41xx,_DL-3xxx_Devices
 
 ### Installation:
