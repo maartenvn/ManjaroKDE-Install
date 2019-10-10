@@ -146,6 +146,7 @@ You can check what type of sleep mode is enabled using:
 ~~~~
 cat /sys/power/mem_sleep 
 ~~~~
+If sleep is not set to `[deep]`, follow the following steps
 
 ### Fix the issue:
 To fix the issue you need to add *mem_sleep_default=deep* to your kernel parameters:
